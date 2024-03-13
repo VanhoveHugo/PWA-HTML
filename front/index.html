@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Footix</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Footix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Équipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Joueurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Calendrier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="hero-banner">
+        <h1>Bienvenue sur notre site de football</h1>
+    </div>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Résultat du dernier match</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Équipe A vs. Équipe B</h5>
+                        <p class="card-text">Le match s'est terminé sur un score de 2-1 en faveur de l'Équipe A.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez ici d'autres contenus ou sections de votre site -->
+        </div>
+    </section>
+
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>À propos de nous</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id justo vel ante pretium
+                        ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                        Curae.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Équipes</a></li>
+                        <li><a href="#">Joueurs</a></li>
+                        <li><a href="#">Calendrier</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contactez-nous</h5>
+                    <address>
+                        123 Rue du Football<br>
+                        Ville du Football<br>
+                        Pays du Football<br>
+                        <abbr title="Téléphone">Tel:</abbr> (123) 456-7890
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('src/service-worker.js')
+        }
+    </script>
+</body>
+
+</html>
